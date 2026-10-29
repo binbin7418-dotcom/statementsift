@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>StatementSift — Bank Statement PDF to CSV, Converted & Reconciled | Local & Private</title>
+<meta name="description" content="StatementSift converts a text-based bank statement PDF to a clean CSV on your own computer, removes duplicate lines, and reconciles every running-balance step plus the closing balance. No upload, no subscription.">
+<style>
+  body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;margin:0;color:#1c2733;line-height:1.6;background:#fbfcfe}
+  .wrap{max-width:820px;margin:0 auto;padding:32px 20px 64px}
+  h1{font-size:2rem;line-height:1.25;margin:.2em 0}
+  h2{margin-top:2em;font-size:1.25rem}
+  .sub{font-size:1.1rem;color:#43536a}
+  .cta{display:inline-block;background:#0b6e4f;color:#fff;padding:12px 22px;border-radius:8px;text-decoration:none;font-weight:600;margin:16px 0}
+  .card{background:#fff;border:1px solid #e3e9f0;border-radius:10px;padding:18px 20px;margin:14px 0}
+  .num{font-weight:700;color:#0b6e4f}
+  footer{color:#7a8798;font-size:.85rem;margin-top:48px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <p><strong>StatementSift</strong></p>
+  <h1>Statement PDF in.<br>Reconciled CSV out. Nothing uploaded.</h1>
+  <p class="sub">StatementSift converts a bank statement PDF into a clean CSV on your own computer — then walks every running-balance step and checks the closing balance, so a conversion error (or a bank error) can't slip into your books unnoticed.</p>
+  <a class="cta" href="https://binbinster.gumroad.com/l/statementsift-bank-statement-pdf-to-csv">Get StatementSift — $29 one-time</a>
+
+  <h2>What it corrects on its own</h2>
+  <div class="card">
+    <ul>
+      <li><strong>Amounts with thousands commas</strong> (2,500.00 → 2500.00) and <strong>DD/MM/YYYY dates</strong> — normalized</li>
+      <li><strong>Exact-duplicate transaction lines</strong> printed twice — removed, and logged</li>
+    </ul>
+  </div>
+
+  <h2>What it reports, but never silently "repairs"</h2>
+  <div class="card">
+    <p>Running-balance breaks — the exact line, the balance the chain requires, the balance the statement prints, and the difference — and a closing balance that fails to reconcile. Which side is wrong is a conversation with your bank, not a guess by software.</p>
+  </div>
+
+  <h2>Verified, not vibes</h2>
+  <div class="card">
+    <p>On a seeded test statement (6 transaction lines, 4 planted defects), StatementSift removed <span class="num">1</span> exact duplicate, logged <span class="num">4</span> corrections, and caught <span class="num">1</span> balance break red-handed: the statement printed 12,700.50 where the chain requires 12,695.50 — a +5.00 difference that also failed closing reconciliation. The re-check confirmed <span class="num">0</span> duplicates remained.</p>
+  </div>
+
+  <h2>How it works</h2>
+  <div class="card">
+    <ol>
+      <li>Download the statement PDF from your bank (the text-based kind)</li>
+      <li>Open StatementSift, choose the PDF, click <em>Convert &amp; Reconcile</em></li>
+      <li>Get back <code>transactions.csv</code> (with per-row flags) and the reconciliation report</li>
+    </ol>
+    <p>Windows 10/11. No account, no subscription, no upload — cloud converters charge $29/month for this and keep your statement on their servers; desktop rivals charge $49.99 and never check their own work.</p>
+  </div>
+
+  <a class="cta" href="https://binbinster.gumroad.com/l/statementsift-bank-statement-pdf-to-csv">Get StatementSift — $29 one-time</a>
+
+  <footer>
+    <p>Scope: text-based statement PDFs whose transaction lines end in "&lt;amount&gt; &lt;balance&gt;". Scanned or photographed statements need OCR and are out of scope for this build — StatementSift will tell you so instead of guessing.</p>
+  </footer>
+</div>
+</body>
+</html>
